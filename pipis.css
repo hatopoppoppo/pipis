@@ -37,7 +37,7 @@ body{
   top: 50px;
   left: 20px;
 }
-.pipis.lady button::after{
+.pipis.mrs button::after{
   content: url(ribbon.png);
   width: 100px !important;
   transform: scale(0.2) rotate(15deg);
