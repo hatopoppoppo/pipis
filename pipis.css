@@ -1,9 +1,6 @@
 @font-face {
-  font-family: "kara";
+  font-family: "karakaze";
   src: url("karakaze-R.ttf") format("truetype");
-}
-body{
-  background-color: #333333;
 }
 .pipis{
   text-align: center;
@@ -11,23 +8,32 @@ body{
 .pipis button{
   position: relative;
   border: none;
-  background-color: aqua;
-  border-radius: 45px;
-  height: 90px;
+  background-color: #00ffff;
+  border-radius: 100vw;
   padding: 0 50px;
   font-size: 40px;
-  line-height: 1.5;
   font-weight: bold;
   margin-top: 110px;
   transition: transform 0.3s;
 }
+.pipis button:hover{
+  transform: translateY(-10px);
+}
+.pipis.mrs button::after{
+  content: url(ribbon.png);
+  width: 100px;
+  transform: scale(0.2) rotate(15deg);
+  position: absolute;
+  top: -260px;
+  right: 30px;
+}
 .pipis p{
-  font-family: "kara";
+  font-family: "karakaze";
   font-size: 50px;
   color: #ffffff;
   transform: rotate(5deg);
   position: absolute;
-  top: -120px;
+  top: -110px;
   left: 0px;
   margin: 0;
 }
@@ -36,15 +42,4 @@ body{
   position: absolute;
   top: 50px;
   left: 20px;
-}
-.pipis.mrs button::after{
-  content: url(ribbon.png);
-  width: 100px !important;
-  transform: scale(0.2) rotate(15deg);
-  position: absolute;
-  top: -260px;
-  right: 30px;
-}
-.pipis button:hover{
-  transform: translateY(-10px);
 }
